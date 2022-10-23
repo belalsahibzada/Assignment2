@@ -1,0 +1,26 @@
+/* Custom CSS goes here */
+body { 
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  left:0;
+  bottom: 0;
+  text-align: center;
+}
+
+p{
+  position: absolute;
+  top: 55%;
+  right: 0;
+  left:0;
+  bottom: 0;
+  text-align: center;
+}
+
+h6{
+text-align: center;
+}
