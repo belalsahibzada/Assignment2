@@ -2,10 +2,31 @@
 <%- include partials/main_nav %>
 <main>
   <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Welcome to the <%= title %> Page</h1>
-    </div>
+    <h1 class="about-title"><%= title %></h1>
+    <div class="form-box"> 
+    <!-- "action" tag uses a third party mail client that forwards all the form submissions it gets to my email -->
+    <form class="form" action="https://formsubmit.co/landon.smyth@fcbbb1db5bbacc7bde345bb1606b4f37" method="POST" >
+          
+          <input type="text"  name="name" placeholder="Your name*" required><br>
+          <input type="email" name="email" placeholder="Your email* " required> <br>
+          <!-- "pattern" basically error checks to make sure the user has entered 
+          their phone number correctly//no text allowed in this field -->
+          <input type="tel" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="2339831562 [Do not include any dashes or spaces]" notrequired> <br>
+          <textarea type="message" name="message" cols="60" rows="6" placeholder="Questions/Concerns*" required></textarea>
+          <!-- extra inputs for the formsubmit client to return user after submitting form,
+          removing captcha so that user doesnt need to put captcha, and also format all the info 
+          in the email-->
+          <input type="hidden" name="_next" value="https://portfolio-belal.herokuapp.com/home">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <button id="buttonOne" type="submit">Submit</button>
+  
+      </form>
+   
   </div>
+
+
+
 </main>
 
 

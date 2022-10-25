@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display:wght@500&display=swap');
 
 body {
-  background-color: rgb(20, 20, 20);
+  background-color: white!important;
   margin: 0px;
   font-family: 'Playfair Display', serif;
 }
@@ -16,7 +16,14 @@ h1 {
   left:0;
   bottom: 0;
   text-align: center;
+  animation: fade-in 2s 1;
 }
+
+@keyframes fade-in {
+  100% {margin-bottom:150px; opacity:1.0}
+  0% {margin-bottom:75px; opacity:0.0}
+}
+
 
 p{
   font-family: 'Playfair Display', serif;
@@ -40,6 +47,19 @@ h6{
   bottom: 0;
   text-align: center;
 }
+.about-title { 
+  font-family: 'Playfair Display', serif;
+  position: absolute;
+  top: 12%;
+  bottom: 0;
+  text-align: center;
+}
+.contact-title {
+  font-family: 'Playfair Display', serif; 
+  position: relative;
+  top: 12%;
+  text-align: center;
+}
 .projects {
   font-family: 'Playfair Display', serif;
   color: #252525;
@@ -48,7 +68,15 @@ h6{
   position: absolute;
   top:25%;
   left: 5%;
+  animation: fade 1s 1;
 }
+
+@keyframes fade {
+  100% {margin-top:0%; opacity:1.0}
+  0% {margin-top:100%; opacity:0.0}
+}
+
+
 /* Styles for projects page*/
 h3{
   font-family: 'Nunito', sans-serif;
@@ -62,3 +90,58 @@ p2 {
   left: 3%;
 }
 
+.form-box{
+  width: 42%;
+  height: 65%;    
+  background: #292b2c;
+  border: 4px solid black;
+  padding-top:15px;
+  border-radius: 12px;
+  
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin:auto;
+  text-align: center;
+}
+
+/* Styling the specific attributes using the selector, credit to W3 schools*/
+input[type=text],[type=email],[type=tel],[type="message"],select  {
+  font-family: 'Nunito', sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: block;
+  width: 85%;
+  padding: 12px;
+  box-sizing: border-box;
+  margin: auto;
+}
+/* Styling the specific attributes using the selector, credit to W3 schools*/
+
+/*Button for contact form*/
+button{
+  background-color: black;
+  color: white;
+  width: 25%;
+  height: 25px;
+  font-family: 'Playfair Display', serif;
+  position: absolute;
+  left: 35%;
+  bottom: 2%;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.about-text { 
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+  position:absolute;
+  top: 35%;
+  left:40%;
+}
+
+img { 
+  animation: fade 1s 1;
+}
