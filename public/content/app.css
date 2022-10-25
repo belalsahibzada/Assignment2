@@ -141,7 +141,6 @@ button{
   top: 35%;
   left:40%;
 }
-
 img { 
-  animation: fade 1s 1;
+  animation: fade 1s 1 !important;
 }
