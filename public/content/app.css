@@ -8,6 +8,7 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
+/*title styling*/
 h1 {
   font-family: 'Playfair Display', serif;
   position: absolute;
@@ -18,13 +19,12 @@ h1 {
   text-align: center;
   animation: fade-in 2s 1;
 }
-
+/*animation keyframe with "fade in" name*/
 @keyframes fade-in {
   100% {margin-bottom:150px; opacity:1.0}
   0% {margin-bottom:75px; opacity:0.0}
 }
-
-
+/*
 p{
   font-family: 'Playfair Display', serif;
   position: absolute;
@@ -34,12 +34,8 @@ p{
   bottom: 0;
   text-align: center;
 }
-
-h6{
-  font-family: 'Playfair Display', serif;
-  text-align: center;
-}
-
+*/
+/*styling project page title to place it at the top of screen*/
 .projects-title{
   font-family: 'Playfair Display', serif;
   position: absolute;
@@ -47,6 +43,7 @@ h6{
   bottom: 0;
   text-align: center;
 }
+/*styling for about me title to place it at the top */
 .about-title { 
   font-family: 'Playfair Display', serif;
   position: absolute;
@@ -54,12 +51,14 @@ h6{
   bottom: 0;
   text-align: center;
 }
+/*styling for contact me title to place it at the top */
 .contact-title {
   font-family: 'Playfair Display', serif; 
   position: relative;
   top: 12%;
   text-align: center;
 }
+/*styling projects text, and images*/
 .projects {
   font-family: 'Playfair Display', serif;
   color: #252525;
@@ -76,13 +75,6 @@ h6{
   0% {margin-top:100%; opacity:0.0}
 }
 
-
-/* Styles for projects page*/
-h3{
-  font-family: 'Nunito', sans-serif;
-  color: #252525;
-  font-size: 50px;  
-}
 /* Styles for projects page*/
 p2 {
   font-family: 'Nunito', sans-serif;
@@ -90,6 +82,7 @@ p2 {
   left: 3%;
 }
 
+/*entire box that holds all of contact form */
 .form-box{
   width: 42%;
   height: 65%;    
@@ -133,7 +126,7 @@ button{
   margin: auto;
   border-radius: 5px;
 }
-
+/*styling for about me text*/
 .about-text { 
   font-family: 'Playfair Display', serif;
   font-size: 35px;
@@ -141,6 +134,7 @@ button{
   top: 35%;
   left:40%;
 }
+/*animation for when page loads*/
 img { 
   animation: fade 1s 1 !important;
 }
