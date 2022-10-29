@@ -129,10 +129,21 @@ button{
 /*styling for about me text*/
 .about-text { 
   font-family: 'Playfair Display', serif;
-  font-size: 35px;
+  font-size: 25px;
   position:absolute;
-  top: 35%;
-  left:40%;
+  top: 65%;
+  left:45%;
+  padding-right: 50px;
+}
+
+video {
+  border-radius: 10px;
+  width: 45%;
+  position: relative;
+  left: 0;
+  right: auto;
+  top: 25px;
+  border: 0px solid white;
 }
 /*animation for when page loads*/
 img { 
